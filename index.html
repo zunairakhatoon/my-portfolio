@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+<body>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="theme-btn">☀️</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+          <img src="images/me.png" alt="My Photo" class="home-img" />
+      <h1>Hi, I'm ZUNAIRA KHATOON</h1>
+      <p>Web Designer | Frontend Developer | Backend Developer | HTML | CSS | JAVA | PYTHON</p>
+      <div class="social-icons">
+  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+          </section>
+
+  <section id="about" class="about-section">
+  <h2>About Me</h2>
+  <div class="about-wrapper">
+    <div class="about-photo-block">
+      <img src="images/me1.png" alt="My Photo" class="about-photo" />
+    </div>
+    <div class="about-content">
+      <p>
+        Hi! Myself <strong>Zunaira Khatoon</strong>. I'm a Software Engineering student at <strong>Fatima Jinnah Women University</strong>. I’ve always been curious about how things work behind the screen, which led me to explore the world of coding and web development.
+      </p>
+      <p>
+        I love creating websites that not only look good but also solve real problems. Whether it’s designing a page or debugging tricky code, I genuinely enjoy the process of building something useful from scratch. I'm always eager to learn new things, take on challenges, and grow as a developer.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services-section">
+  <h2>My Services</h2>
+  <div class="services-container">
+    <div class="service-card">
+      <i class="fas fa-paint-brush"></i>
+      <h3>Web Design</h3>
+      <p>I create responsive and visually appealing website designs using modern tools and principles.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-tablet-alt"></i>
+      <h3>Responsive Layouts</h3>
+      <p>Your site will look perfect on all devices — from phones to desktops.</p>
+    </div>
+    <div class="service-card">
+  <i class="fas fa-server"></i>
+  <h3>Backend Development</h3>
+  <p>I work on server-side logic, databases, and APIs using different tools.</p>
+</div>
+
+    <div class="service-card">
+      <i class="fas fa-code"></i>
+      <h3>Frontend Development</h3>
+      <p>I build interactive, clean, and optimized user interfaces with HTML, CSS, and JavaScript.</p>
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="projects">
+  <h2>My Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <img src="images/p1.png" alt="My Photo" class="project-image">
+
+
+      <p>This is my first personal portfolio built using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project-card">
+      <h3>Coming Soon</h3>
+      <p>More projects will be added here as I complete them in my learning journey.</p>
+    </div>
+    <div class="project-card">
+      <h3>Mini Project Idea</h3>
+      <p>Maybe a calculator, a to-do app, or a small recipe site coming soon!</p>
+    </div>
+  </div>
+</section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <span class="message" id="nameMsg"></span>
+        </div>
+        <div class="form-group">
+          <input type="text" id="phone" placeholder="Your Phone Number" required />
+          <span class="message" id="phoneMsg"></span>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Your Email" required />
+          <span class="message" id="emailMsg"></span>
+        </div>
+        <div class="form-group">
+          <input type="text" id="subject" placeholder="Subject" required />
+          <span class="message" id="subjectMsg"></span>
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <span class="message" id="msgMsg"></span>
+        </div>
+        <button type="submit" id="contactBtn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

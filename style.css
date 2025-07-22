@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #faf5ff;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Theme */
+body.dark {
+  background: #2d033b;
+  color: #fceaff;
+}
+
+header.dark {
+  background: linear-gradient(to right, #6a0dad, #4b0082);
+}
+
+.hero.dark,
+.contact-section.dark {
+  background: #3e1367;
+}
+
+/* Button Style */
+.theme-btn {
+  margin-left: 15px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background: white;
+  color: #7e22ce;
+  border: 1px solid #d8b4fe;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+body.dark .theme-btn {
+  background: #7e22ce;
+  color: white;
+  border-color: white;
+}
+
+header {
+  background: linear-gradient(to right, #c084fc, #d8b4fe);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+main, section {
+  padding: 2rem;
+  text-align: center;
+}
+.hero {
+    position: relative;
+z-index: 1;
+  height: 100vh;
+  background: #f3e8ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+.contact-section {
+  background: #f8f0ff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px rgba(128, 0, 128, 0.1);
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+input, textarea {
+  padding: 10px;
+  border: 1px solid #d8b4fe;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #a855f7;
+}
+.message {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  text-align: left;
+  height: 18px;
+}
+.valid {
+  color: green;
+}
+.invalid {
+  color: red;
+}
+button {
+  padding: 12px;
+  background: #a855f7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  background: #7e22ce;
+}
+.bubble {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: rgba(168, 85, 247, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: bubbleEffect 0.6s ease-out forwards;
+  z-index: 1000;
+}
+@keyframes bubbleEffect {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(6);
+    opacity: 0;
+  }
+}
+.home-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 5px solid #d8b4fe;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.4rem;
+  color: #a855f7;
+  transition: color 0.3s ease;
+}
+.social-icons a:hover {
+  color: #7e22ce;
+}
+#services {
+  padding: 3rem 1rem;
+  background: #f3e8ff;
+  text-align: center;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 5px 15px rgba(168, 85, 247, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.service-card i {
+  font-size: 2rem;
+  color: #a855f7;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #7e22ce;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(168, 85, 247, 0.25);
+}
+#projects {
+  padding: 3rem 1rem;
+  background: #a78bfa; /* lighter indigo purple */
+  color: white;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #ede9fe; /* soft lilac */
+  border: 2px solid #7c3aed;
+  color: #3f3f46;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 260px;
+  text-align: left;
+  box-shadow: 0 5px 12px rgba(124, 58, 237, 0.15);
+  transition: transform 0.3s ease;
+}
+.project-image {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+
+.project-card h3 {
+  color: #7c3aed;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(124, 58, 237, 0.25);
+}
+/* ABOUT SECTION */
+.about-section {
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom right, #f3e8ff, #faf5ff);
+  text-align: center;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid #c084fc;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(168, 85, 247, 0.3);
+}
+
+.about-content {
+  max-width: 700px;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  text-align: left;
+  line-height: 1.7;
+  color: #4a4a4a;
+}
+
+/* SERVICES SECTION */
+.services-section {
+  padding: 4rem 1rem;
+  background: #ede9fe;
+  text-align: center;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(168, 85, 247, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(168, 85, 247, 0.25);
+}
+
+.service-card i {
+  font-size: 2rem;
+  color: #9333ea;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  color: #6b21a8;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #4a4a4a;
+}
+
